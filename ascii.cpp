@@ -5,16 +5,16 @@ int main(int argc, char *argv[])
 
     int x;
     int y;
+    int i;
     int j;
-    int k;
 
-    printf("\t");
+    printf("  ");
 
     x=2;
     
     while (x<=7)
     {
-        printf("%i\t", x);
+        printf("%i  ", x);
         x++;
     };
 
@@ -24,7 +24,20 @@ int main(int argc, char *argv[])
     while ( x>=0 )
     {
         printf("*");
+        x--;
     };
+
+    printf("\n");
+
+    i=0;
+
+    while ( i<=0xf )
+    {
+        i++;
+    };
+    
+
+
     
     
 
