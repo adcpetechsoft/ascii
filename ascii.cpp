@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
                 printf("DEL ");
             }else
             {
-                printf("%c 7", x);
+                printf("%c ", x);
             };
             
             j++;
