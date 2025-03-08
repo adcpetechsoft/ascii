@@ -1,11 +1,9 @@
 #define STR_MAX 20
 
 #include <stdio.h>
-#include <string.h>
 
 int main(int argc, char *argv[])
 {
-
     int x;
     int i;
     int j;
@@ -52,21 +50,18 @@ int main(int argc, char *argv[])
                 printf("DEL ");
             }else
             {
-                printf("%c ", x);
+                printf("%c 7", x);
             };
             
             j++;
 
         };
         
-
         printf("\n");
 
         i++;
     };
     
-
     return 0;
-
 
 };
