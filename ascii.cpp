@@ -37,9 +37,7 @@ int main(int argc, char *argv[])
 
     while ( i<=0xf )
     {
-
         printf("%X:\t", i);
-
 
         j=2;
         while ( j<=7 )
@@ -47,10 +45,15 @@ int main(int argc, char *argv[])
 
             snprintf(strbuff, sizeof(STR_MAX), "%X%X", j, i );
             sscanf(strbuff, "%X", &x);
-            
-            printf("%c\t", x);
-            
 
+            if( x == 0x7f)
+            {
+                printf("DEL\t");
+            }else
+            {
+                printf("%c\t", x);
+            };
+            
             j++;
 
         };
@@ -61,13 +64,6 @@ int main(int argc, char *argv[])
         i++;
     };
     
-
-
-    
-    
-
-
-
 
     return 0;
 
