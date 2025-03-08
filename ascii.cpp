@@ -7,7 +7,6 @@ int main(int argc, char *argv[])
 {
 
     int x;
-    int y;
     int i;
     int j;
 
@@ -15,21 +14,21 @@ int main(int argc, char *argv[])
 
     printf("    ");
 
-    x=2;
+    i=2;
     
-    while (x<=7)
+    while (i<=7)
     {
-        printf("%i\t", x);
-        x++;
+        printf("%i\t", i);
+        i++;
     };
 
     printf("\n");
 
-    x=15;
-    while ( x>=0 )
+    i=15;
+    while ( i>=0 )
     {
         printf("*");
-        x--;
+        i--;
     };
 
     printf("\n");
@@ -46,7 +45,9 @@ int main(int argc, char *argv[])
         {
 
             snprintf(strbuff, sizeof(STR_MAX), "%X%X", j, i );
-            printf("%s\t", strbuff);
+            sscanf(strbuff, "%X", &x);
+            
+            printf("%c\t", x);
             
 
             j++;
