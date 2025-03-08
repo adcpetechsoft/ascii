@@ -1,14 +1,34 @@
+/*
+    ASCII Table Display Progrma
+    As a submission to https://code.golf/ascii-table#c
+
+    Created by: amd
+
+*/
+
+// ---------------------------------
+// Preprocessor Declaration
 #define STR_MAX 20
 
 #include <stdio.h>
 
+// ---------------------------------
+// Progran  Entry Point
 int main(int argc, char *argv[])
 {
+
+    // ***********************
+    // Variable Declaration
+
     int x;
     int i;
     int j;
 
     char strbuff[STR_MAX];
+
+
+    // ***********************
+    // Actual Procedure
 
     printf("   ");
 
@@ -41,7 +61,6 @@ int main(int argc, char *argv[])
         j=2;
         while ( j<=7 )
         {
-
             snprintf(strbuff, sizeof(STR_MAX), "%X%X", j, i );
             sscanf(strbuff, "%X", &x);
 
