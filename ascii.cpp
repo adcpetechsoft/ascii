@@ -12,22 +12,23 @@ int main(int argc, char *argv[])
 
     char strbuff[STR_MAX];
 
-    printf("\t");
+    printf("   ");
 
     i=2;
     
     while (i<=7)
     {
-        printf("%i\t", i);
+        printf("%i ", i);
         i++;
     };
 
     printf("\n");
 
-    i=7;
+    i=13;
+    printf(" ");
     while ( i>0 )
     {
-        printf("*\t");
+        printf("-");
         i--;
     };
 
@@ -37,7 +38,7 @@ int main(int argc, char *argv[])
 
     while ( i<=0xf )
     {
-        printf("%X:\t", i);
+        printf("%X: ", i);
 
         j=2;
         while ( j<=7 )
@@ -48,10 +49,10 @@ int main(int argc, char *argv[])
 
             if( x == 0x7f)
             {
-                printf("DEL\t");
+                printf("DEL ");
             }else
             {
-                printf("%c\t", x);
+                printf("%c ", x);
             };
             
             j++;
